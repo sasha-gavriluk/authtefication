@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'users',
     'pages',
+    'articles',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
@@ -113,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
@@ -139,3 +140,11 @@ EMAIL_USE_TLS = True
 
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+"""
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "apikey"
+EMAIL_HOST_PASSWORD = "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"
+EMAIL_USE_TLS = True
+"""
